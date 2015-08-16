@@ -2,20 +2,20 @@
 <html data-require="math math-format word-problems spin">
   <head>
     <title>Linked List KA Exercise</title>
-    <script src="../../lib/jquery.min.js"></script>
-    <script src="../../lib/jquery-ui.min.js"></script>
+    <!-- <script src="../../lib/jquery.min.js"></script> -->
+    <!-- <script src="../../lib/jquery-ui.min.js"></script> -->
     <script>
     window.OpenPopKa = true;
     </script>
-    <script data-main="../../ODSAkhan-exercises/local-only/main.js" src="../../ODSAkhan-exercises/local-only/require.js"></script>
+    <script data-main="../../khan-exercises/local-only/main.js" src="../../khan-exercises/local-only/require.js"></script>
     <script src="../../lib/codemirror/lib/codemirror.js"></script>
     <link rel="stylesheet" href="../../lib/codemirror/lib/codemirror.css">
     <script src="../../lib/codemirror/mode/clike/clike.js"></script>
     <script>
-    var editor = CodeMirror.fromTextArea(codeTextarea, {
-    lineNumbers: true,
-    mode:  "text/x-java"
-    });
+        var editor = CodeMirror.fromTextArea(codeTextarea, {
+        lineNumbers: true,
+        mode:  "text/x-java"
+        });
     </script>
   </head>
   <body data-height="550" data-width="950">
@@ -30,14 +30,14 @@
       <div class="problems">
         <div> <!-- Supresses answer box -->
         <p class="problem" id = "test">Add appropriate lines of code to
-          the following function skeleton so that it make method calls on
-          the List ADT to  create the following list: <b> "&lt; <var>listel1</var> <var>listel2</var> | <var>listel3</var> <var>listel4</var> &gt;" </b> <br>You should assume that L is passed to the function as an empty list.  <br />
-          </h4>
-          <textarea  id="codeTextarea">
-          void exercise1(List L) {
-          // Your code goes between these lines
-          // Your code goes between these lines
-          }
+        the following function skeleton so that it make method calls on
+        the List ADT to  create the following list: <b> "&lt; <var>listel1</var> <var>listel2</var> | <var>listel3</var> <var>listel4</var> &gt;" </b> <br>You should assume that L is passed to the function as an empty list.  <br />
+        </h4>
+        <textarea  id="codeTextarea">
+        void exercise1(List L) {
+        // Your code goes between these lines
+        // Your code goes between these lines
+        }
         </textarea></p>
         <div class="question">
         </div>
