@@ -43,8 +43,6 @@
         lastAttemptOrHint,
         firstProblem = true;
 
-
-
     var server = SCORE_SERVER ? SCORE_SERVER : typeof OpenPopKa !== "undefined" ? "https://opendsa.cc.vt.edu" : null;
     BOOK_ID = BOOK_ID ? BOOK_ID : typeof OpenPopKa !== "undefined" ? "CS3114" : null;
     var SESSION_KEY = 'phantom-key';
@@ -53,7 +51,6 @@
 
     // Whether student got the proficiency for the exercise or not.
     var proficiency = false;
-
 
 
     $(Exercises)
@@ -166,7 +163,6 @@
             skipped: false
         });
     }
-
 
     function handleSkippedQuestion() {
         return handleAttempt({
@@ -707,7 +703,6 @@
         return deferred.promise();
     }
 
-
     function readyForNextProblem(e, data) {
         if (!firstProblem) {
             // As both of the following variables are only used to make sure the
@@ -759,7 +754,6 @@
         }
     }
 
-
     function gotoNextProblem() {
         var framework = Exercises.getCurrentFramework();
         if (framework === "perseus") {
@@ -777,7 +771,6 @@
             $(Khan).trigger("updateUserExercise", data);
         }
     }
-
 
     function enableCheckAnswer() {
         $("#check-answer-button")
