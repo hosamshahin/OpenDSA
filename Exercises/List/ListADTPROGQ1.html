@@ -20,6 +20,35 @@
     <script src="../../khan-exercises/local-only/main.js" ></script>
     <script src="../../lib/codemirror_main.js"></script>
 
+<!-- 
+    <script src="../../lib/CodeMirror-5.5.0/lib/codemirror.js"></script>
+    <script src="../../lib/CodeMirror-5.5.0/addon/dialog/dialog.js"></script>
+    <script src="../../lib/CodeMirror-5.5.0/addon/search/searchcursor.js"></script>
+    <script src="../../lib/CodeMirror-5.5.0/mode/clike/clike.js"></script>
+    <script src="../../lib/CodeMirror-5.5.0/addon/edit/matchbrackets.js"></script>
+    <script src="../../lib/CodeMirror-5.5.0/keymap/vim.js"></script>
+
+    <script>
+      var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        lineNumbers: true,
+        mode: "text/x-csrc",
+        keyMap: "vim",
+        matchBrackets: true,
+        showCursorWhenSelecting: true
+      });
+      var commandDisplay = document.getElementById('command-display');
+      var keys = '';
+      CodeMirror.on(editor, 'vim-keypress', function(key) {
+        keys = keys + key;
+        commandDisplay.innerHTML = keys;
+      });
+      CodeMirror.on(editor, 'vim-command-done', function(e) {
+        keys = '';
+        commandDisplay.innerHTML = keys;
+      });
+    </script>
+ -->
+
   </head>
   <body data-height="550" data-width="950">
     <div class="exercise">
