@@ -104,6 +104,17 @@
           }
         }
       },
+      "NewKA/ListADTPROG": {
+        "long_name": "ListADTPROG",
+        "exercises": {
+          "ListADTPROG": {
+            "long_name": "ListADTPROG",
+            "required": true,
+            "points": 1.0,
+            "threshold": 5
+          }
+        }
+      },
       "NewKA/ListADTPROGQ1": {
         "long_name": "ListADTPROGQ1",
         "exercises": {
@@ -111,6 +122,7 @@
             "long_name": "ListADTPROGQ1",
             "required": true,
             "points": 1.0,
+            "showhide": "show",
             "threshold": 5
           }
         }

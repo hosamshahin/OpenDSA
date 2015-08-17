@@ -1,54 +1,15 @@
 <!DOCTYPE html>
-<html data-require="math math-format word-problems spin">
+<html data-require="math math-format word-problems spin codemirror">
+<!-- <html data-require="math math-format word-problems spin"> -->
   <head>
     <title>Linked List KA Exercise</title>
-    <!-- <script src="../../lib/jquery.min.js"></script> -->
-    <!-- <script src="../../lib/jquery-ui.min.js"></script> -->
     <script>
       window.OpenPopKa = true;
-      var init = "void exercise1(List L) {\n// Your code goes between these lines\n// Your code goes between these lines\n}";
     </script>
-    <link rel=stylesheet href="../../lib/CodeMirror-5.5.0/doc/docs.css">
-    <link rel="stylesheet" href="../../lib/CodeMirror-5.5.0/lib/codemirror.css">
-    <link rel="stylesheet" href="../../lib/CodeMirror-5.5.0/addon/dialog/dialog.css">
-    <link rel="stylesheet" href="../../lib/CodeMirror-5.5.0/theme/midnight.css">
-    <link rel="stylesheet" href="../../lib/CodeMirror-5.5.0/theme/solarized.css">
-    <style type="text/css">
-      .CodeMirror {border-top: 1px solid #eee; border-bottom: 1px solid #eee;}
-    </style>
     <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.min.js"></script>
     <script src="../../khan-exercises/local-only/main.js" ></script>
-    <script src="../../lib/codemirror_main.js"></script>
-
-<!-- 
-    <script src="../../lib/CodeMirror-5.5.0/lib/codemirror.js"></script>
-    <script src="../../lib/CodeMirror-5.5.0/addon/dialog/dialog.js"></script>
-    <script src="../../lib/CodeMirror-5.5.0/addon/search/searchcursor.js"></script>
-    <script src="../../lib/CodeMirror-5.5.0/mode/clike/clike.js"></script>
-    <script src="../../lib/CodeMirror-5.5.0/addon/edit/matchbrackets.js"></script>
-    <script src="../../lib/CodeMirror-5.5.0/keymap/vim.js"></script>
-
-    <script>
-      var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
-        lineNumbers: true,
-        mode: "text/x-csrc",
-        keyMap: "vim",
-        matchBrackets: true,
-        showCursorWhenSelecting: true
-      });
-      var commandDisplay = document.getElementById('command-display');
-      var keys = '';
-      CodeMirror.on(editor, 'vim-keypress', function(key) {
-        keys = keys + key;
-        commandDisplay.innerHTML = keys;
-      });
-      CodeMirror.on(editor, 'vim-command-done', function(e) {
-        keys = '';
-        commandDisplay.innerHTML = keys;
-      });
-    </script>
- -->
-
+    <!-- <script src="../../lib/codemirror_main.js"></script> -->
+    <link rel="stylesheet" href="../../lib/CodeMirror-5.5.0/lib/codemirror.css">
   </head>
   <body data-height="550" data-width="950">
     <div class="exercise">
@@ -68,11 +29,14 @@
           <textarea id="code" name="code">
 void exercise1(List L) {
 // Your code goes between these lines
+
+
+
+
 // Your code goes between these lines
 }
           </textarea>
         </form>
-        <div style="font-size: 13px; width: 300px; height: 30px;">Key buffer: <span id="command-display"></span></div>
         <div class="question"></div>
         <div class="solution" data-type="custom">
           <div class="guess"> [ editor.getValue()  ] </div>
@@ -88,5 +52,12 @@ void exercise1(List L) {
       </div>
     </div>
   </div>
+      <script>
+    window.editor = KhanUtil.CodeMirror.fromTextArea(code, {
+        lineNumbers: true,
+        mode: "text/x-java"
+    });
+    </script>
+
 </body>
 </html>
