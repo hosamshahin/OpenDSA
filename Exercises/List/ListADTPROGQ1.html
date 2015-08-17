@@ -5,21 +5,24 @@
     <!-- <script src="../../lib/jquery.min.js"></script> -->
     <!-- <script src="../../lib/jquery-ui.min.js"></script> -->
     <script>
-    window.OpenPopKa = true;
+      window.OpenPopKa = true;
     </script>
-    <script data-main="../../khan-exercises/local-only/main.js" src="../../khan-exercises/local-only/require.js"></script>
-    <script src="../../lib/codemirror/lib/codemirror.js"></script>
     <link rel="stylesheet" href="../../lib/codemirror/lib/codemirror.css">
+    <script data-main="../../khan-exercises/local-only/main.js" src="../../khan-exercises/local-only/require.js"></script>
+    <!-- <script data-main="../../lib/codemirror_main.js" src="../../khan-exercises/local-only/require.js"></script> -->
+<!-- 
+    <script src="../../lib/codemirror/lib/codemirror.js"></script>
     <script src="../../lib/codemirror/mode/clike/clike.js"></script>
+
     <script>
         var editor = CodeMirror.fromTextArea(codeTextarea, {
         lineNumbers: true,
         mode:  "text/x-java"
         });
     </script>
+ -->
   </head>
   <body data-height="550" data-width="950">
-    
     <div class="exercise">
       <div class="vars">
         <var id="listel1">randRange(0, 99)</var>
