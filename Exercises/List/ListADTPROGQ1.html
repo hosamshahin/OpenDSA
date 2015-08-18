@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html data-require="math math-format word-problems spin codemirror">
-<!-- <html data-require="math math-format word-problems spin"> -->
+<html data-require="codemirror math math-format word-problems spin">
+  <!-- <html data-require="math math-format word-problems spin"> -->
   <head>
     <title>Linked List KA Exercise</title>
     <script>
-      window.OpenPopKa = true;
+    window.OpenPopKa = true;
     </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.min.js"></script>
     <script src="../../khan-exercises/local-only/main.js" ></script>
@@ -22,21 +22,17 @@
       <div class="problems">
         <div> <!-- Supresses answer box -->
         <p class="problem" id="test">Add appropriate lines of code to
-          the following function skeleton so that it make method calls on
-          the List ADT to  create the following list: <b> "&lt; <var>listel1</var> <var>listel2</var> | <var>listel3</var> <var>listel4</var> &gt;" </b> <br>You should assume that L is passed to the function as an empty list.  <br />
+        the following function skeleton so that it make method calls on
+        the List ADT to  create the following list: <b> "&lt; <var>listel1</var> <var>listel2</var> | <var>listel3</var> <var>listel4</var> &gt;" </b> <br>You should assume that L is passed to the function as an empty list.  <br/>
         </p>
-        <form>
-          <textarea id="code" name="code">
+        <textarea id="code" name="code">
 void exercise1(List L) {
 // Your code goes between these lines
 
 
-
-
 // Your code goes between these lines
 }
-          </textarea>
-        </form>
+        </textarea>
         <div class="question"></div>
         <div class="solution" data-type="custom">
           <div class="guess"> [ editor.getValue()  ] </div>
@@ -52,12 +48,5 @@ void exercise1(List L) {
       </div>
     </div>
   </div>
-      <script>
-    window.editor = KhanUtil.CodeMirror.fromTextArea(code, {
-        lineNumbers: true,
-        mode: "text/x-java"
-    });
-    </script>
-
 </body>
 </html>

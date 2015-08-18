@@ -1,8 +1,8 @@
-.. _recTracingSumm1:
+.. _ListADTPROGSumm:
 
 .. raw:: html
 
-   <script>ODSA.SETTINGS.DISP_MOD_COMP = true;ODSA.SETTINGS.MODULE_NAME = "recTracingSumm1";ODSA.SETTINGS.MODULE_LONG_NAME = "recTracingSumm1";ODSA.SETTINGS.MODULE_CHAPTER = "Sorting"; ODSA.SETTINGS.BUILD_DATE = "2015-08-13 11:28:40"; ODSA.SETTINGS.BUILD_CMAP = false;JSAV_OPTIONS['lang']='en';JSAV_EXERCISE_OPTIONS['code']='processing';</script>
+   <script>ODSA.SETTINGS.DISP_MOD_COMP = true;ODSA.SETTINGS.MODULE_NAME = "ListADTPROGSumm";ODSA.SETTINGS.MODULE_LONG_NAME = "ListADTPROGSumm";ODSA.SETTINGS.MODULE_CHAPTER = "Sorting"; ODSA.SETTINGS.BUILD_DATE = "2015-08-13 11:28:40"; ODSA.SETTINGS.BUILD_CMAP = false;JSAV_OPTIONS['lang']='en';JSAV_EXERCISE_OPTIONS['code']='processing';</script>
 
 
 .. |--| unicode:: U+2013   .. en dash
@@ -18,12 +18,12 @@
 .. avmetadata::
    :author: Cliff Shaffer
    :requires: sorting terminology; sort code tuning; insertion sort
-   :satisfies: recTracingSumm1
+   :satisfies: ListADTPROGSumm
    :topic: Sorting
 
-.. index:: ! recTracingSumm1
+.. index:: ! ListADTPROGSumm
 
-recTracingSumm1
+ListADTPROGSumm
 ===============
 
-.. avembed:: Exercises/RecurTutor/recTracingSumm1.html ka
+.. avembed:: Exercises/List/ListADTPROGSumm.html ka

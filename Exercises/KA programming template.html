@@ -1,0 +1,58 @@
+<div class="exercise">
+    <div class="vars"></div>
+    <div class="problems">
+        <p class="problem" id="XYZ"></p>
+        <textarea name="code" id="code" cols="30" rows="10"></textarea>
+        <div class="question"></div>
+        <div class="solution" data-type="custom">
+            <div class="guess"> [ editor.getValue()  ] </div>
+            <div class="validator-function"></div>
+        </div>
+        <div class="hints"></div>
+    </div>
+</div>
+<multiple></multiple>
+
+<div class="exercise">
+    <div class="vars"></div>
+    <div class="problems">
+        <div id="corresponding-angles">
+            <div class="vars"></div>
+            <div class="hints" data-apply="prependContents"></div>
+        </div>
+        <div id="alternate-interior-angles">
+            <div class="vars"></div>
+            <div class="hints" data-apply="prependContents"></div>
+        </div>
+        <div id="alternate-exterior-angles">
+            <div class="vars"></div>
+            <div class="hints" data-apply="prependContents"></div>
+        </div>
+        <div id="same-side-interior-angles">
+            <div class="vars"></div>
+            <div class="hints"></div>
+        </div>
+        <div id="same-side-exterior-angles">
+            <div class="vars"></div>
+            <div class="hints"></div>
+        </div>
+    </div>
+    <p>Below are two parallel lines with a third line intersecting them.</p>
+    <p class="question"></p>
+    <div class="graphie" id="parallel-lines">
+        init({
+        range: [[-4, 3], [-3, 3]],
+        scale: 60
+        });
+        graph.pl = new ParallelLines(0, 0, 5.5, 2, ROTATION);
+        graph.pl.draw();
+        graph.pl.drawMarkers(ANCHOR);
+        graph.pl.drawTransverse(ANCHOR);
+        graph.pl.drawAngle(KNOWN_INDEX, true);
+        graph.pl.drawAngle(UNKNOWN_INDEX, "x", GREEN);
+    </div>
+    <p class="solution" data-type="multiple">
+    <span class="sol short40" data-forms="integer"><var>SOLUTION</var></span> <code>^\circ</code>
+    </p>
+    <div class="hints"></div>
+</div>
