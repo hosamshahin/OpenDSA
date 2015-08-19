@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<html data-require="jsav math">
+<html data-require="math jsav">
 <head>
   <title>Tree Definition Questions</title>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.min.js"></script>
-  <script src="../../khan-exercises/local-only/main.js" ></script>
-  <link rel="stylesheet" href="../../JSAV/css/JSAV.css" type="text/css"/>
-  <link rel="stylesheet" href="../../lib/odsaStyle-min.css" type="text/css"/>
+  <script data-main="../../khan-exercises/local-only/main.js" src="../../khan-exercises/local-only/require.js"></script>
   <style>
     .jsavcontainer {
       height: 300px;
@@ -14,38 +11,41 @@
 </head>
 
 <body data-height="650" data-width="950">
+<script>
+var initJSAV = function () {
+  var jsav = new JSAV("jsav");
+  jsav.recorded();
+  var bt = jsav.ds.binarytree({center: true, visible: true, nodegap: 15});
+  bt.root(14);
+  var rt = bt.root();
+  rt.left(2);
+  rt.left().left(1);
+  rt.left().right(3);
+  rt.right(11);
+  rt.right().left(10);
+  rt.right().left().left(7);
+  rt.right().right(30);
+  rt.right().right().left(40);
+  bt.layout();
+}
+</script>
+
 <div class="exercise">
   <div class="vars">
-    <var id="JSAV">
-      function () {
-          var jsav = new window.JSAV("jsav");
-          jsav.recorded();
-          var bt = jsav.ds.binarytree({center: true, visible: true, nodegap: 15});
-          bt.root(14);
-          var rt = bt.root();
-          rt.left(2);
-          rt.left().left(1);
-          rt.left().right(3);
-          rt.right(11);
-          rt.right().left(10);
-          rt.right().left().left(7);
-          rt.right().right(30);
-          rt.right().right().left(40);
-          bt.layout();
-        }
-    </var>
+    <var id="JSAV">initJSAV()</var>
   </div>
+
   <div class="problems">
-    <div id="problem-type-or-description-1">
+    <div>
       <div class="vars">
         <var id="ANS">5</var>
       </div>
-      <p class="problem">
+      <p class="question">How many internal nodes does this tree have?
         <div id="jsav" class="jsavcanvas"></div>
       </p>
-      <p class="question">How many internal nodes does this tree have?</p>
       <p class="solution" data-type="text"><var>ANS</var></p>
     </div>
+
     <div id="problem-type-or-description-2">
       <div class="vars">
         <var id="ANS">4</var>
@@ -56,6 +56,7 @@
       <p class="question">How many leaf nodes does this tree have?</p>
       <p class="solution" data-type="text"><var>ANS</var></p>
     </div>
+
     <div id="problem-type-or-description-3">
       <div class="vars">
         <var id="ANS">6</var>
@@ -66,6 +67,7 @@
       <p class="question">How many nodes in the tree have at least one sibling?</p>
       <p class="solution" data-type="text"><var>ANS</var></p>
     </div>
+
     <div id="problem-type-or-description-4">
       <div class="vars">
         <var id="ANS">8</var>
@@ -77,6 +79,7 @@
          tree have?</p>
       <p class="solution" data-type="text"><var>ANS</var></p>
     </div>
+
     <div id="TreeHeight">
       <div id="jsav" class="jsavcanvas"></div>
       <p class="question">What is the height of this tree?</p>
@@ -95,6 +98,7 @@
       <div class="hints">
       </div>
     </div>
+
     <div id="TreeDepth">
       <div id="jsav" class="jsavcanvas"></div>
       <p class="question">What is the depth of this tree?</p>
@@ -113,6 +117,7 @@
       <div class="hints">
       </div>
     </div>
+
     <div id="FullComplete">
       <div id="jsav" class="jsavcanvas"></div>
       <p class="question">Which statement is correct?</p>

@@ -1,56 +1,35 @@
 <!DOCTYPE html>
-<html data-require="math math-format word-problems spin">
+<html data-require="codemirror math math-format word-problems spin">
   <head>
     <title> Recursion Programming Exercise: Multiply</title>
-<!-- 
-    <script src="../../lib/jquery.min.js"></script>
-    <script src="../../lib/jquery-ui.min.js"></script>
-
-    <script data-main="../../ODSAkhan-exercises/local-only/main.js" src="../../ODSAkhan-exercises/local-only/require.js"></script>
-    <script src="../../lib/odsaStyle-min.css"></script>
-    <script src="../../lib/codemirror/lib/codemirror.js"></script>
-    <link rel="stylesheet" href="../../lib/codemirror/lib/codemirror.css">
-    <script src="../../lib/codemirror/mode/clike/clike.js"></script>
     <script>
-    var editor = CodeMirror.fromTextArea(codeTextarea, {
-    lineNumbers: true,
-    mode:  "text/x-java"
-    });
+        window.config = {
+          OpenPopKa : true
+        }
     </script>
-    <script> window.OpenPopKa = true; </script>
- -->
-    <link rel="stylesheet" href="../../lib/CodeMirror-5.5.0/doc/docs.css">
-    <link rel="stylesheet" href="../../lib/CodeMirror-5.5.0/lib/codemirror.css">
-    <link rel="stylesheet" href="../../lib/CodeMirror-5.5.0/addon/dialog/dialog.css">
-    <link rel="stylesheet" href="../../lib/CodeMirror-5.5.0/theme/midnight.css">
-    <link rel="stylesheet" href="../../lib/CodeMirror-5.5.0/theme/solarized.css">
-
     <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.min.js"></script>
-    <!-- <script src="../../khan-exercises/local-only/main.js" ></script> -->
-    <script src="../../lib/codemirror_main.js"></script>
+    <script src="../../khan-exercises/local-only/main.js" ></script>
 
   </head>
   <body>
     <div class="exercise">
       <div class="problems">
-        <div> <!-- Supresses answer box -->
-        <p class="problem" id = "test">Given the following recursive function write
+        <div id="recCMultiplyPROG">
+        <p class="problem" id="test">Given the following recursive function write
         down the missing base case condition and the action that should be done
         at the base case such that this function multiply two numbers x and y.
         (Assume both values given are positive.)
-        <br />
-        </h4>
-        <p></p>
-        <textarea  id="codeTextarea">int multiply(int x, int y) {
-        //<<Missing base case condition>>
-        //<<Missing base case action>>
-        else
-        return multiply(x-1, y) + y;
-        }
-        </textarea></p>
-        <div class="question">
-          
-        </div>
+        <br>
+        <textarea id="code" name="code">
+int multiply(int x, int y) {
+//<<Missing base case condition>>
+//<<Missing base case action>>
+else
+return multiply(x-1, y) + y;
+}
+        </textarea>
+        </p>
+        <div class="question"></div>
         <div class="solution" data-type="custom">
           <div class="guess"> [  editor.getValue()   ] </div>
           <div class="validator-function">
@@ -59,8 +38,7 @@
             window.summexName=  "recCMultiplyPROG";
           </div>
         </div>
-        <div class="hints">
-        </div>
+        <div class="hints"></div>
       </div>
     </div>
   </div>
