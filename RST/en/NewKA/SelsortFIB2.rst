@@ -1,8 +1,8 @@
-.. _BubsortPRO:
+.. _SelsortFIB2:
 
 .. raw:: html
 
-   <script>ODSA.SETTINGS.DISP_MOD_COMP = true;ODSA.SETTINGS.MODULE_NAME = "Quicksort";ODSA.SETTINGS.MODULE_LONG_NAME = "Quicksort";ODSA.SETTINGS.MODULE_CHAPTER = "Sorting"; ODSA.SETTINGS.BUILD_DATE = "2015-08-13 11:28:40"; ODSA.SETTINGS.BUILD_CMAP = false;JSAV_OPTIONS['lang']='en';JSAV_EXERCISE_OPTIONS['code']='processing';</script>
+   <script>ODSA.SETTINGS.DISP_MOD_COMP = true;ODSA.SETTINGS.MODULE_NAME = "SelsortFIB2";ODSA.SETTINGS.MODULE_LONG_NAME = "SelsortFIB2";ODSA.SETTINGS.MODULE_CHAPTER = "Sorting"; ODSA.SETTINGS.BUILD_DATE = "2015-08-13 11:28:40"; ODSA.SETTINGS.BUILD_CMAP = false;JSAV_OPTIONS['lang']='en';JSAV_EXERCISE_OPTIONS['code']='processing';</script>
 
 
 .. |--| unicode:: U+2013   .. en dash
@@ -18,12 +18,12 @@
 .. avmetadata::
    :author: Cliff Shaffer
    :requires: sorting terminology; sort code tuning; insertion sort
-   :satisfies: quicksort
+   :satisfies: SelsortFIB2
    :topic: Sorting
 
-.. index:: ! BubsortPRO
+.. index:: ! SelsortFIB2
 
-BubsortPRO
-==========
+SelsortFIB2
+===========
 
-.. avembed:: Exercises/Sorting/BubsortPRO.html ka
+.. avembed:: Exercises/Sorting/SelsortFIB2.html ka

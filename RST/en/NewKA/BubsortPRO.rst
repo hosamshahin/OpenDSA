@@ -1,8 +1,8 @@
-.. _ShellsortMCQ5:
+.. _BubsortPRO:
 
 .. raw:: html
 
-   <script>ODSA.SETTINGS.DISP_MOD_COMP = true;ODSA.SETTINGS.MODULE_NAME = "ShellsortMCQ5";ODSA.SETTINGS.MODULE_LONG_NAME = "ShellsortMCQ5";ODSA.SETTINGS.MODULE_CHAPTER = "Sorting"; ODSA.SETTINGS.BUILD_DATE = "2015-08-13 11:28:40"; ODSA.SETTINGS.BUILD_CMAP = false;JSAV_OPTIONS['lang']='en';JSAV_EXERCISE_OPTIONS['code']='processing';</script>
+   <script>ODSA.SETTINGS.DISP_MOD_COMP = true;ODSA.SETTINGS.MODULE_NAME = "BubsortPRO";ODSA.SETTINGS.MODULE_LONG_NAME = "BubsortPRO";ODSA.SETTINGS.MODULE_CHAPTER = "Sorting"; ODSA.SETTINGS.BUILD_DATE = "2015-08-13 11:28:40"; ODSA.SETTINGS.BUILD_CMAP = false;JSAV_OPTIONS['lang']='en';JSAV_EXERCISE_OPTIONS['code']='processing';</script>
 
 
 .. |--| unicode:: U+2013   .. en dash
@@ -21,9 +21,9 @@
    :satisfies: quicksort
    :topic: Sorting
 
-.. index:: ! ShellsortMCQ5
+.. index:: ! BubsortPRO
 
-ShellsortMCQ5
-=============
+BubsortPRO
+==========
 
-.. avembed:: Exercises/Sorting/ShellsortMCQ5.html ka
+.. avembed:: Exercises/Sorting/BubsortPRO.html ka

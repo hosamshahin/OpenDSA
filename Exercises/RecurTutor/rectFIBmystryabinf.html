@@ -11,9 +11,16 @@
     <div class="exercise">
       <div class="problems">
         <div id="problem-type-or-description">
+          <div class="vars">
+            <var id="config">
+              (function(){
+                  window.codeMirrorReadOnly = true;
+                }())
+            </var>
+          </div>
           <p class="question">
           Consider the following function:
-          <textarea id="code" name="code">
+          <textarea id="codeTextarea" name="codeTextarea">
 int mystery(int a, int b) {
   if (b == 1)
     return a;

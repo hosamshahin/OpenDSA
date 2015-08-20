@@ -1,22 +1,9 @@
 <!DOCTYPE html>
-<html data-require="math">
+<html data-require="codemirror math">
 <head>
   <title> Recursion Tracing Exercise: What does the following function do?</title>
-  <script src="../../lib/jquery.min.js"></script>
-  <script src="../../lib/jquery-ui.min.js"></script>
-  <script src="../../ODSAkhan-exercises/khan-exercise.js"></script>
- 
-  
-  <script src="../../lib/codemirror/lib/codemirror.js"></script>
-  <link rel="stylesheet" href="../../lib/codemirror/lib/codemirror.css">
-  <script src="../../lib/codemirror/mode/clike/clike.js"></script>
-  <script>
-  var editor = CodeMirror.fromTextArea(codeTextarea, {
-    lineNumbers: true,
-    readOnly: true,
-    mode:  "text/x-java"
-  });
-  </script> 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.min.js"></script>
+    <script src="../../khan-exercises/local-only/main.js" ></script>
   <style> 
    #problemarea { height: 750px;}
   </style>
@@ -26,6 +13,14 @@
 <div class="exercise">
   <div class="problems">
     <div id="problem-type-or-description">
+      <div class="vars">
+        <var id="config">
+          (function(){
+              window.codeMirrorReadOnly = true;
+            }())
+        </var>
+      </div>
+
       <p class="question"> What does the following function do?
       <textarea id="codeTextarea" >public int function(int [] x , int n) { 
   int t;	
