@@ -111,6 +111,18 @@
           }
         }
       },
+      "NewKA/SortSumm": {
+        "long_name": "SortSumm",
+        "exercises": {
+          "SortSumm": {
+          "long_name": "SortSumm",
+            "required": true,
+            "points": 1.0,
+            "showhide": "show",
+            "threshold": 5
+          }
+        }
+      },
       "NewKA/ListADTPROGSumm": {
         "long_name": "ListADTPROGSumm",
         "exercises": {
